@@ -1,0 +1,6 @@
+framework module Pods_TestTokped {
+  umbrella header "Pods-TestTokped-umbrella.h"
+
+  export *
+  module * { export * }
+}

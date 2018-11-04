@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Shop Type View Controller-->
+        <scene sceneID="lmU-j6-Xvz">
+            <objects>
+                <viewController id="5JO-Gd-Ia5" customClass="ShopTypeViewController" customModule="TestTokped" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nbr-PQ-jkJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kib-pb-qZi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
+                                <color key="backgroundColor" red="0.94502562284469604" green="0.94513887166976929" blue="0.94498705863952637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.94502562280000002" green="0.94513887169999999" blue="0.94498705859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5JO-Gd-Ia5" id="0cE-R6-udt"/>
+                                    <outlet property="delegate" destination="5JO-Gd-Ia5" id="ST7-9J-ZEj"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS5-88-LKd">
+                                <rect key="frame" x="0.0" y="613.5" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.27789574859999999" green="0.70049530270000004" blue="0.31218090650000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                <state key="normal" title="Apply">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="applyBtn:" destination="5JO-Gd-Ia5" eventType="touchUpInside" id="WxO-Hu-tkP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BS5-88-LKd" firstAttribute="leading" secondItem="NFg-1D-ffj" secondAttribute="leading" id="4h8-Hj-U48"/>
+                            <constraint firstItem="BS5-88-LKd" firstAttribute="top" secondItem="Kib-pb-qZi" secondAttribute="bottom" id="5Nn-Qb-8qQ"/>
+                            <constraint firstItem="NFg-1D-ffj" firstAttribute="trailing" secondItem="Kib-pb-qZi" secondAttribute="trailing" id="7do-Vw-sBg"/>
+                            <constraint firstItem="BS5-88-LKd" firstAttribute="height" secondItem="Nbr-PQ-jkJ" secondAttribute="height" multiplier="0.08" id="99c-eO-MiA"/>
+                            <constraint firstItem="NFg-1D-ffj" firstAttribute="bottom" secondItem="BS5-88-LKd" secondAttribute="bottom" id="JHL-wI-NvC"/>
+                            <constraint firstItem="Kib-pb-qZi" firstAttribute="top" secondItem="Nbr-PQ-jkJ" secondAttribute="top" id="MCH-W1-gBa"/>
+                            <constraint firstAttribute="trailing" secondItem="BS5-88-LKd" secondAttribute="trailing" id="Wy3-q0-vaF"/>
+                            <constraint firstItem="Kib-pb-qZi" firstAttribute="leading" secondItem="NFg-1D-ffj" secondAttribute="leading" id="ltT-9a-NO0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NFg-1D-ffj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OGK-3g-plX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="1mX-rK-emD">
+                            <color key="tintColor" red="0.27789574859999999" green="0.70049530270000004" blue="0.31218090650000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="closeAct:" destination="5JO-Gd-Ia5" id="FnL-hC-cmN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="9EN-ym-rqS">
+                            <color key="tintColor" red="0.27789574859999999" green="0.70049530270000004" blue="0.31218090650000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="resetVal:" destination="5JO-Gd-Ia5" id="CRf-Vu-b1r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="resetBarBtn" destination="9EN-ym-rqS" id="16j-uJ-0aT"/>
+                        <outlet property="tableView" destination="Kib-pb-qZi" id="q3Q-YG-r6W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVr-4F-Zsz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="33.733133433283363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="I12-c8-0D5">
+            <objects>
+                <navigationController storyboardIdentifier="shopType" automaticallyAdjustsScrollViewInsets="NO" id="S8Z-bF-LAe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fBC-tM-zCz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5JO-Gd-Ia5" kind="relationship" relationship="rootViewController" id="hIz-7Q-dMr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fto-pk-Oo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="sUX-mF-zcd" customClass="ProductCollectionViewCell" customModule="TestTokped" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="455"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="455"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="136-pZ-yRh">
+                        <rect key="frame" x="5" y="5" width="318" height="360"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lCD-W8-cHs">
+                        <rect key="frame" x="154" y="175" width="20" height="20"/>
+                        <color key="color" red="0.27789574859999999" green="0.70049530270000004" blue="0.31218090650000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </activityIndicatorView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZV-yD-QG7">
+                        <rect key="frame" x="0.0" y="365" width="328" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serena-1188 Pianoi Serena-1188 PianoiSerena-1188 PianoiPianoiSerena-1188 Pianoi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEQ-QM-BYr">
+                                <rect key="frame" x="10" y="10" width="308" height="41"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 150.000" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z22-0b-Kqy">
+                                <rect key="frame" x="10" y="55.5" width="308" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.96832805870000005" green="0.53305464979999995" blue="0.39390748739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gEQ-QM-BYr" secondAttribute="trailing" constant="10" id="Idc-9O-wxj"/>
+                            <constraint firstAttribute="bottom" secondItem="z22-0b-Kqy" secondAttribute="bottom" constant="15" id="Lsf-B2-LJl"/>
+                            <constraint firstItem="gEQ-QM-BYr" firstAttribute="leading" secondItem="0ZV-yD-QG7" secondAttribute="leading" constant="10" id="MHe-7U-YyM"/>
+                            <constraint firstItem="z22-0b-Kqy" firstAttribute="leading" secondItem="0ZV-yD-QG7" secondAttribute="leading" constant="10" id="Pvk-Jo-CCy"/>
+                            <constraint firstItem="gEQ-QM-BYr" firstAttribute="top" secondItem="0ZV-yD-QG7" secondAttribute="top" constant="10" id="YUv-xw-GDg"/>
+                            <constraint firstAttribute="trailing" secondItem="z22-0b-Kqy" secondAttribute="trailing" constant="10" id="YbE-oA-xo2"/>
+                            <constraint firstAttribute="height" constant="90" id="jfA-rc-d1B"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0ZV-yD-QG7" secondAttribute="trailing" id="0Rh-c1-AbJ"/>
+                <constraint firstItem="0ZV-yD-QG7" firstAttribute="top" secondItem="136-pZ-yRh" secondAttribute="bottom" id="7A0-dI-dYG"/>
+                <constraint firstAttribute="trailing" secondItem="136-pZ-yRh" secondAttribute="trailing" constant="5" id="AxM-zc-GJR"/>
+                <constraint firstItem="lCD-W8-cHs" firstAttribute="centerY" secondItem="136-pZ-yRh" secondAttribute="centerY" id="Guz-3k-KGZ"/>
+                <constraint firstAttribute="bottom" secondItem="0ZV-yD-QG7" secondAttribute="bottom" id="P3Z-xM-NMR"/>
+                <constraint firstItem="0ZV-yD-QG7" firstAttribute="leading" secondItem="sUX-mF-zcd" secondAttribute="leading" id="WsV-Fz-XuA"/>
+                <constraint firstItem="136-pZ-yRh" firstAttribute="top" secondItem="sUX-mF-zcd" secondAttribute="top" constant="5" id="dwD-ga-OCw"/>
+                <constraint firstItem="lCD-W8-cHs" firstAttribute="centerX" secondItem="136-pZ-yRh" secondAttribute="centerX" id="iEE-5L-8Fj"/>
+                <constraint firstItem="136-pZ-yRh" firstAttribute="leading" secondItem="sUX-mF-zcd" secondAttribute="leading" constant="5" id="rhI-ZN-1TD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="4Bc-7d-7Lv"/>
+            <size key="customSize" width="328" height="455"/>
+            <connections>
+                <outlet property="actIndicator" destination="lCD-W8-cHs" id="YUq-tV-FRP"/>
+                <outlet property="imgView" destination="136-pZ-yRh" id="oHM-Kg-gef"/>
+                <outlet property="lblPrice" destination="z22-0b-Kqy" id="VLe-h0-IhP"/>
+                <outlet property="lblProductName" destination="gEQ-QM-BYr" id="8fh-e1-Yf7"/>
+            </connections>
+            <point key="canvasLocation" x="332" y="342.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
